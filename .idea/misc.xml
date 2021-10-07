@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_home.xml" value="0.4" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_productos.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

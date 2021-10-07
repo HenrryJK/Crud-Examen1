@@ -27,6 +27,7 @@
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
+        android:inputType="textPassword"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:textSize="25dp"
@@ -37,6 +38,7 @@
     <EditText
         android:id="@+id/repassword"
         android:layout_width="match_parent"
+        android:inputType="textPassword"
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
         android:layout_marginTop="50dp"

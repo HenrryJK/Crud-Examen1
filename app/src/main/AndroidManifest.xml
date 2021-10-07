@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SqliteLoginCrud">
         <activity
+            android:name=".ProductoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
