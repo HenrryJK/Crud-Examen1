@@ -20,9 +20,6 @@ public class HomeActivity extends AppCompatActivity {
         mydb = new DBHelper(this);
 
 
-
-
-
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         btnProductos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ProductoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ProductoListActivity.class);
                 startActivity(intent);
             }
         });

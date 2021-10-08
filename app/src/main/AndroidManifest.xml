@@ -10,7 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SqliteLoginCrud">
         <activity
+            android:name=".VerActivity"
+            android:exported="true"
+            android:parentActivityName=".ProductoListActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ProductoListActivity" />
+        </activity>
+        <activity
             android:name=".ProductoActivity"
+            android:exported="true"
+            android:parentActivityName=".ProductoListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductoListActivity" />
+        </activity>
+
+        <activity
+            android:name=".EditarActivity"
+            android:exported="true"
+            android:parentActivityName=".ProductoListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProductoListActivity" />
+        </activity>
+        <activity
+            android:name=".ProductoListActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"

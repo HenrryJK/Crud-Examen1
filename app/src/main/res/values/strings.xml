@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SqliteLogin-Crud</string>
+    <string name="hint_nomprod">Nombre d/Producto: </string>
+    <string name="hint_categoria">Categoria: </string>
+    <string name="hint_precio">Precio: </string>
+    <string name="hint_cantidad">Cantidad/Stock: </string>
+    <string name="btn_guardar">Registrar Producto </string>
+    <string name="menu_nuevo">Nuevo Producto </string>
 </resources>

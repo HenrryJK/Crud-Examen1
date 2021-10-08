@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 public class DBHelper extends SQLiteOpenHelper {
-
+    public  static final String TABLE_PRODUCTOS = "productos";
     public DBHelper(@Nullable Context context) {
         super(context, "login.db" , null , 1);
     }
@@ -17,6 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase mydb) {
         mydb.execSQL("create Table correos(correo Text primary key , password Text)");
+
     }
 
     @Override
@@ -56,6 +57,5 @@ public class DBHelper extends SQLiteOpenHelper {
             }
         }
 
-        
+    }
 
-}
