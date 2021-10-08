@@ -12,9 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sqlitelogin_crud.db.DbProductos;
 import com.example.sqlitelogin_crud.entidades.Productos;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class EditarActivity  extends AppCompatActivity {
     EditText txtNomprod , txtCategoria , txtPrecio , txtCantidad;
+    FloatingActionButton fabEditar , fabEliminar;
     Button btnGuarda;
     boolean correcto = false;
     Productos producto;
@@ -30,6 +32,10 @@ public class EditarActivity  extends AppCompatActivity {
         txtCantidad = findViewById(R.id.txtCantidad);
         btnGuarda = findViewById(R.id.btnGuarda);
 
+        fabEditar = findViewById(R.id.fabEditar);
+        fabEditar.setVisibility(View.INVISIBLE);
+        fabEliminar = findViewById(R.id.fabEliminar);
+        fabEliminar.setVisibility(View.INVISIBLE);
         if (savedInstanceState == null){
             Bundle extras = getIntent().getExtras();
             if (extras == null){

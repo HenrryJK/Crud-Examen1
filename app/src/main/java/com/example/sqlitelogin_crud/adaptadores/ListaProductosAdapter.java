@@ -17,12 +17,18 @@ import com.example.sqlitelogin_crud.entidades.Productos;
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ListaProductosAdapter extends RecyclerView.Adapter<ListaProductosAdapter.ProductoViewHolder> {
         //agregue el constructor
         ArrayList<Productos> listaProductos;
+        // para buscar
+    ArrayList<Productos> listaOriginal;
         public ListaProductosAdapter(ArrayList<Productos> listaProductos){
             this.listaProductos = listaProductos;
+            listaOriginal = new ArrayList<>();
+            listaOriginal.addAll(listaProductos);
         }
 
 
@@ -41,6 +47,31 @@ public class ListaProductosAdapter extends RecyclerView.Adapter<ListaProductosAd
         holder.viewPrecio.setText(listaProductos.get(position).getPrecio());
         holder.viewCantidad.setText(listaProductos.get(position).getCantidad());
     }
+
+    /////// metodo para buscar un registro
+    public void filtrado(String txtBuscar){
+            int longitud = txtBuscar.length();
+            if (longitud == 0){
+                listaProductos.clear();
+                listaProductos.addAll(listaOriginal);
+            }else{
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                    List<Productos> collecion =  listaProductos.stream().filter(i -> i.getNomprod().toLowerCase().contains(txtBuscar.toLowerCase())).collect(Collectors.toList());
+                    listaProductos.clear();
+                    listaProductos.addAll(collecion);
+                }else{
+                    for (Productos p: listaOriginal){
+                        if (p.getNomprod().toLowerCase().contains(txtBuscar.toLowerCase())){
+                          listaProductos.add(p);
+                        }
+                    }
+                }
+            }
+            // es para notificar los cambios.
+            notifyDataSetChanged();
+    }
+
+
 
     // el tamaño de la lista / conocer el tamaño de la lista
     @Override

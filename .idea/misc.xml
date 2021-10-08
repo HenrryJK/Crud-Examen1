@@ -4,14 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/drawable-v24/ic_producto.xml" value="0.11944444444444445" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/drawable/ic_delete.xml" value="0.1" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_home.xml" value="0.4" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_list_prod.xml" value="0.1" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_producto.xml" value="0.1" />
-        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_producto_list.xml" value="0.264" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_producto_list.xml" value="0.1" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_productos.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_ver.xml" value="0.2361111111111111" />
+        <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/activity_ver.xml" value="0.152" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/lista_item_producto.xml" value="0.4" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/layout/lista_item_productos.xml" value="0.264" />
         <entry key="..\:/Users/HENRY/Desktop/Android-clases/SqliteLoginCrud/app/src/main/res/menu/menu_principal.xml" value="0.264" />

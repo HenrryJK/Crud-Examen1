@@ -36,7 +36,11 @@
         </activity>
         <activity
             android:name=".ProductoListActivity"
-            android:exported="true" />
+            android:exported="true"  android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".HomeActivity" />
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:exported="true" />

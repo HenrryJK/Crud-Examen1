@@ -1,7 +1,9 @@
 package com.example.sqlitelogin_crud;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
@@ -16,7 +18,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 public class VerActivity extends AppCompatActivity {
     EditText txtNomprod , txtCategoria , txtPrecio , txtCantidad;
     Button btnGuarda;
-    FloatingActionButton fabEditar;
+    FloatingActionButton fabEditar , fabEliminar;
     Productos producto;
     int id = 0;
     @Override
@@ -30,6 +32,7 @@ public class VerActivity extends AppCompatActivity {
         txtCantidad = findViewById(R.id.txtCantidad);
         btnGuarda = findViewById(R.id.btnGuarda);
         fabEditar = findViewById(R.id.fabEditar);
+        fabEliminar = findViewById(R.id.fabEliminar);
 
         if (savedInstanceState == null){
            Bundle extras = getIntent().getExtras();
@@ -66,5 +69,33 @@ public class VerActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        fabEliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(VerActivity.this);
+                builder.setMessage("Desea Eliminar este registro ?")
+                        .setPositiveButton("SI", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                                if (dbProductos.eliminarProducto(id)){
+                                        lista();
+                                }
+                            }
+                        })
+                        .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        }).show();
+
+                }
+        });
+    }
+    private void lista(){
+        Intent intent = new Intent(this , ProductoListActivity.class);
+        startActivity(intent);
     }
 }
